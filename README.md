@@ -1,25 +1,25 @@
 # DELTASIGNE - Sign Language Translator
 
-🤟 **Application mobile de traduction en temps réel de la langue des signes utilisant l'IA**
+**Application mobile de traduction en temps réel de la langue des signes utilisant l'IA**
 
 *Auteur: Joseph Mukubu Kapoya*
 
-## 📋 Description
+##  Description
 
 DELTASIGNE est une application mobile innovante qui utilise l'intelligence artificielle pour reconnaître et traduire les gestes de la langue des signes en texte en temps réel. L'application combine une interface Flutter moderne avec un backend Python utilisant MediaPipe et TensorFlow pour une reconnaissance précise des gestes.
 
-### 🎯 Fonctionnalités principales
+###  Fonctionnalités principales
 
-- **🎥 Traduction en temps réel**: Reconnaissance instantanée des gestes via la caméra
-- **🤖 Double modèle IA**: Combinaison de deux modèles de reconnaissance pour une meilleure précision
-- **📚 Dictionnaire de gestes**: Base de données des gestes supportés avec démonstrations
-- **⭐ Favoris**: Sauvegarde des traductions fréquemment utilisées
-- **📜 Historique**: Historique complet des traductions effectuées
-- **👤 Profil utilisateur**: Gestion du compte utilisateur avec Firebase
-- **🌙 Mode sombre**: Interface adaptée aux préférences de l'utilisateur
-- **🔗 Connexion API**: Communication avec un serveur Flask pour le traitement IA
+- **Traduction en temps réel**: Reconnaissance instantanée des gestes via la caméra
+- **Double modèle IA**: Combinaison de deux modèles de reconnaissance pour une meilleure précision
+- **Dictionnaire de gestes**: Base de données des gestes supportés avec démonstrations
+- **Favoris**: Sauvegarde des traductions fréquemment utilisées
+- **Historique**: Historique complet des traductions effectuées
+- **Profil utilisateur**: Gestion du compte utilisateur avec Firebase
+- **Mode sombre**: Interface adaptée aux préférences de l'utilisateur
+- **Connexion API**: Communication avec un serveur Flask pour le traitement IA
 
-## 🏗️ Architecture
+## Architecture
 
 Le projet est divisé en deux composants principaux:
 
@@ -35,7 +35,7 @@ Le projet est divisé en deux composants principaux:
 - **Machine Learning**: TensorFlow/Keras pour la classification des gestes
 - **Double approche**: Modèle basé sur les landmarks + modèle Teachable Machine
 
-## 🚀 Technologies utilisées
+## Technologies utilisées
 
 ### Frontend Flutter
 - **State Management**: flutter_riverpod ^2.5.1
@@ -53,7 +53,7 @@ Le projet est divisé en deux composants principaux:
 - **Machine Learning**: TensorFlow, Keras
 - **Data Processing**: NumPy, Pillow
 
-## 📦 Installation
+##  Installation
 
 ### Prérequis
 
@@ -124,30 +124,30 @@ L'API Flask se configure automatiquement avec les fichiers présents:
 - `tm_labels.txt` - Liste des gestes du modèle 2
 - `hand_landmarker.task` - Fichier modèle MediaPipe
 
-## 🤚 Gestes supportés
+##  Gestes supportés
 
 ### Modèle 1 - Landmarks (10 gestes)
-- ✅ Okay
-- ✅ Peace
-- ✅ Thumbs up
-- ✅ Thumbs down
-- ✅ Call me
-- ✅ Stop
-- ✅ Rock
-- ✅ Live long
-- ✅ Fist
-- ✅ Smile
+-  Okay
+-  Peace
+-  Thumbs up
+-  Thumbs down
+-  Call me
+-  Stop
+-  Rock
+-  Live long
+-  Fist
+-  Smile
 
 ### Modèle 2 - Teachable Machine (7 gestes)
-- ✅ Hello
-- ✅ I love you
-- ✅ No
-- ✅ Okay
-- ✅ Please
-- ✅ Thank you
-- ✅ Yes
+-  Hello
+-  I love you
+-  No
+-  Okay
+-  Please
+-  Thank you
+-  Yes
 
-## 📱 Structure du projet
+##  Structure du projet
 
 ```
 DELTASIGNE2.2/
@@ -187,7 +187,7 @@ DELTASIGNE2.2/
 └── README.md                    # Ce fichier
 ```
 
-## 🔌 API Documentation
+##  API Documentation
 
 ### Endpoints disponibles
 
@@ -241,7 +241,7 @@ GET /gestures
 ```
 Retourne la liste complète des gestes supportés par les deux modèles.
 
-## 🎮 Utilisation
+##  Utilisation
 
 ### Démarrage rapide
 
@@ -275,7 +275,7 @@ Retourne la liste complète des gestes supportés par les deux modèles.
 - **Profil**: Gestion des informations utilisateur
 - **Paramètres**: Personnalisation de l'expérience
 
-## 🧪 Tests
+##  Tests
 
 ### Tests Flutter
 ```bash
@@ -288,14 +288,14 @@ cd hand-gesture-recognition-code
 python test.py
 ```
 
-## 🔒 Sécurité
+##  Sécurité
 
 - Les clés Firebase doivent être remplacées avant le déploiement
 - L'API Flask utilise CORS pour autoriser les requêtes depuis le frontend
 - Les données utilisateur sont stockées de manière sécurisée dans Firebase
 - Communication HTTPS recommandée pour la production
 
-## 🐛 Dépannage
+##  Dépannage
 
 ### Problèmes courants
 
@@ -319,7 +319,7 @@ python test.py
 - S'assurer que les services Firebase sont activés
 - Vérifier les règles de sécurité Firestore et Storage
 
-## 📈 Améliorations futures
+##  Améliorations futures
 
 - [ ] Support de plusieurs mains simultanément
 - [ ] Ajout de plus de gestes dans les modèles
@@ -329,7 +329,7 @@ python test.py
 - [ ] Integration vocale pour la prononciation
 - [ ] Statistiques d'utilisation et progression
 
-## 🤝 Contribution
+##  Contribution
 
 Les contributions sont les bienvenues! Pour contribuer:
 
@@ -339,11 +339,11 @@ Les contributions sont les bienvenues! Pour contribuer:
 4. Push vers la branche
 5. Ouvrir une Pull Request
 
-## 📝 Licence
+##  Licence
 
 Ce projet a été développé par Joseph Mukubu Kapoya dans le cadre de DELTASIGNE.
 
-## 🙏 Remerciements
+##  Remerciements
 
 - **MediaPipe** pour la technologie de détection des mains
 - **TensorFlow/Keras** pour les outils de machine learning
@@ -351,7 +351,7 @@ Ce projet a été développé par Joseph Mukubu Kapoya dans le cadre de DELTASIG
 - **Firebase** pour les services backend
 - La communauté open-source pour les nombreuses bibliothèques utilisées
 
-## 📞 Contact
+##  Contact
 
 Pour toute question ou suggestion concernant DELTASIGNE, n'hésitez pas à contacter l'auteur.
 
