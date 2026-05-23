@@ -1,0 +1,9 @@
+# DELTASIGNE — Requirements Flask API
+
+flask
+flask-cors
+mediapipe
+tensorflow
+opencv-python
+numpy
+Pillow
